@@ -408,16 +408,17 @@ Home section
 @media screen and (max-width:990px) {
   .container-1280px.comapanies-hero-section {
     grid-column-gap: 80px;
-    grid-row-gap: 80px;
+    grid-row-gap: 50px;
     flex-direction: column;
     align-items: center;
     max-width: 800px;
     margin-bottom: 0;
     display: flex;
+    padding: 2rem 1.4rem;
   }
 
   .companies-hero-text-contain {
-    width: 80%;
+    width: 100%;
   }
 }
 
