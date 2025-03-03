@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="course.css">
+  <link rel="stylesheet" href="global.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-grid.min.css"
+    integrity="sha512-i1b/nzkVo97VN5WbEtaPebBG8REvjWeqNclJ6AItj7msdVcaveKrlIIByDpvjk5nwHjXkIqGZscVxOrTb9tsMA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <input type="checkbox" name="check" id="check">
+      <div class="logo-container">
+        <!-- <h3 class="logo">Brand<span>Name</span></h3> -->
+        <a href="index.html"><img src="assests/logos/MCC White Logo.svg" alt=""></a>
+      </div>
+
+      <div class="nav-btn">
+        <div class="nav-links">
+          <ul>
+            <li class="nav-link" style="--i: .6s">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="nav-link" style="--i: 1.35s">
+              <a href="index.html#about-section">About</a>
+            </li>
+            <!-- <li class="nav-link" style="--i: .85s">
+              <a href="#">Menu<i class="fas fa-caret-down"></i></a>
+              <div class="dropdown">
+                <ul>
+                  <li class="dropdown-link">
+                    <a href="#">Link 1</a>
+                  </li>
+                  <li class="dropdown-link">
+                    <a href="#">Link 2</a>
+                  </li>
+                  <li class="dropdown-link">
+                    <a href="#">Link 3<i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown second">
+                      <ul>
+                        <li class="dropdown-link">
+                          <a href="#">Link 1</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="#">Link 2</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="#">Link 3</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="#">More<i class="fas fa-caret-down"></i></a>
+                          <div class="dropdown second">
+                            <ul>
+                              <li class="dropdown-link">
+                                <a href="#">Link 1</a>
+                              </li>
+                              <li class="dropdown-link">
+                                <a href="#">Link 2</a>
+                              </li>
+                              <li class="dropdown-link">
+                                <a href="#">Link 3</a>
+                              </li>
+                              <div class="arrow"></div>
+                            </ul>
+                          </div>
+                        </li>
+                        <div class="arrow"></div>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dropdown-link">
+                    <a href="#">Link 4</a>
+                  </li>
+                  <div class="arrow"></div>
+                </ul>
+              </div>
+            </li> -->
+            <li class="nav-link" style="--i: 1.1s">
+              <a href="#">Services<i class="fas fa-caret-down"></i></a>
+              <div class="dropdown">
+                <ul>
+                  <li class="dropdown-link">
+                    <a href="fullstack.html">Full-Stack</a>
+                  </li>
+                  <li class="dropdown-link">
+                    <a href="pythonstack.html">Core Python with OOPs</a>
+                  </li>
+                  <!-- <li class="dropdown-link">
+                    <a href="#">Link 3<i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown second">
+                      <ul>
+                        <li class="dropdown-link">
+                          <a href="#">Link 1</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="#">Link 2</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="#">Link 3</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="#">More<i class="fas fa-caret-down"></i></a>
+                          <div class="dropdown second">
+                            <ul>
+                              <li class="dropdown-link">
+                                <a href="#">Link 1</a>
+                              </li>
+                              <li class="dropdown-link">
+                                <a href="#">Link 2</a>
+                              </li>
+                              <li class="dropdown-link">
+                                <a href="#">Link 3</a>
+                              </li>
+                              <div class="arrow"></div>
+                            </ul>
+                          </div>
+                        </li>
+                        <div class="arrow"></div>
+                      </ul>
+                    </div>
+                  </li> -->
+                  <li class="dropdown-link">
+                    <a href="data-analyst.html">Data Analytics</a>
+                  </li>
+                  <div class="arrow"></div>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-link" style="--i: 1.35s">
+              <a href="index.html#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="log-sign" style="--i: 1.8s">
+          <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1v3f-pTYox6378tLCAlg9z3yvM1q-hGJ9e0YvzvSt8SYXMEyIIQ763YqEU5kVlEZBFcH-5Za_e?gv=true"
+            class="btn transparent" target="_blank">Book an appointment</a>
+        </div>
+      </div>
+
+      <div class="hamburger-menu-container">
+        <div class="hamburger-menu">
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section companies-hero-section">
+    <div class="container-1280px comapanies-hero-section">
+      <div class="companies-hero-text-contain">
+        <h1 class="heading-56px companies-hero-heading">Master Front-end, Back-end, Databases, and Deployment
+
+          <!-- </em></span><span class="companies-hero-heading-span-2"> Mumbai Coding Club</span> -->
+        </h1>
+        <div class="paragraph-20px companies-hero-desc">Join us and become a Full Stack Developer. Learn to code, build
+          dynamic web applications, and master both front-end & back-end technologies.
+        </div>
+        <div class="companies-hero-features-wrap">
+          <div class="companies-hero-feature">
+            <div class="companies-hero-feature-icon-wrap large">
+              <i class="fa-solid fa-person-chalkboard" class="footer-header-point-icon"></i>
+            </div>
+            <div class="paragraph-18px companies-hero-feature-text">Weekend live sessions</div>
+          </div>
+          <div class="companies-hero-feature">
+            <div class="companies-hero-feature-icon-wrap">
+              <i class="fas fa-question-circle" class="footer-header-point-icon"></i>
+            </div>
+            <div class="paragraph-18px companies-hero-feature-text">Live Doubt Resolution sessions</div>
+          </div>
+          <div class="companies-hero-feature">
+            <div class="companies-hero-feature-icon-wrap">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <div class="paragraph-18px companies-hero-feature-text">Career Guidance and Interview Preparation</div>
+          </div>
+        </div>
+        <div class="w-embed">
+        </div>
+      </div>
+      <div class="companies-hero-slider-contain video"><a href="#" class="hero-lightbox w-inline-block w-lightbox"><img
+            src="https://cdn.prod.website-files.com/65159e844f8f08a72cefa2aa/6657825449e428b7c784bd54_Bg%20(2).png"
+            loading="lazy"
+            sizes="(max-width: 479px) 91vw, (max-width: 990px) 80vw, (max-width: 1439px) 40vw, 761.9000244140625px"
+            srcset="https://cdn.prod.website-files.com/65159e844f8f08a72cefa2aa/6657825449e428b7c784bd54_Bg%20(2)-p-500.png 500w, https://cdn.prod.website-files.com/65159e844f8f08a72cefa2aa/6657825449e428b7c784bd54_Bg%20(2)-p-800.png 800w, https://cdn.prod.website-files.com/65159e844f8f08a72cefa2aa/6657825449e428b7c784bd54_Bg%20(2).png 1296w"
+            alt="" class="image-100" />
+        </a></div>
+    </div>
+  </section>
+
+
+  <div class="container2 advantage" id="course-curriculum">
+    <div class="sec1">
+      <div class="tab-header">
+        <div class="course-tab active" data-tab="tab1">OVERVIEW </div>
+        <div class="course-tab" data-tab="tab2"> CURRICULUM</div>
+        <div class="course-tab" data-tab="tab3"> TECH STACK</div>
+      </div>
+      <div id="tab1" class="tab-content active">
+        <h2>Course Overview</h2>
+        <p>
+          Our Data Analytics course offers a comprehensive curriculum covering essential topics such as data cleaning, exploratory analysis, statistical modeling, and visualization techniques using tools like Excel, Power BI, and Python. The course is designed for both beginners and advanced learners, ensuring a strong foundation and practical experience. With <strong>6 hours per  week</strong> of classes over a duration of <strong>4 to 6 months</strong>, you'll receive expert mentorship and hands-on projects. The course is offered in <strong>online</strong> mode, providing flexibility for learners. With <strong>100% placement assistance</strong>, live project modules, and dedicated support, you'll be well-prepared for a successful career in data analytics. Whether you're just starting out or looking to advance, our course offers the guidance and resources you need to excel in the field.
+
+        </p>
+      </div>
+      <div id="tab2" class="tab-content curriculum">
+        <h2>Course Module</h2>
+
+        <p class="title">Introduction to Python</p>
+        <p>Learn the basics of the most popular programming language
+          Python, and become an expert in the core fundamentals of
+          programming.</p>
+
+        <p class="title">Introduction to SQL
+        </p>
+        <p>SQL (Structured Query Language) is a powerful tool for
+          managing relational databases. It enables efficient data
+          creation, retrieval, updating, and deletion through queries,
+          commands, and scripts, making it essential for both simple and
+          complex database tasks.</p>
+
+        <p class="title">Business Statistics: Statistical Analysis</p>
+        <p>Statistical analysis in business statistics involves using data to
+          make informed decisions. It includes techniques for
+          summarizing data, identifying trends, and making predictions.
+          Key methods are descriptive statistics, inferential statistics, and
+          hypothesis testing, all of which help businesses understand
+          patterns, forecast outcomes, and optimize strategies.
+        </p>
+
+        <p class="title">Business Statistics: Data Analytics
+        </p>
+        <p>Data analytics in business statistics involves examining data
+          through cleaning, exploratory analysis, and predictive modeling.
+          It helps businesses uncover insights, identify trends, and make
+          data-driven decisions to boost performance and growth.</p>
+
+        <p class="title">Excel with AI: Basic to Advanced</p>
+        <p>Excel with AI: Basic to Advanced covers everything from
+          fundamental spreadsheet skills to complex data analysis. It
+          starts with basic functions and formatting, progresses through
+          intermediate features like pivot tables and advanced formulas,
+          and culminates in advanced techniques such as data modeling
+          and automation, equipping users with comprehensive Excel
+          expertise.
+        </p>
+
+        <p class="title">Power BI</p>
+        <p>Power BI is a Microsoft tool for data visualization and business
+          intelligence. It connects to various data sources, transforms and
+          models data, and creates interactive reports and dashboards.
+          Key features include customizable visuals, real-time data
+          updates, predictive analytics with DAX, and seamless
+          integration with other Microsoft products. It supports
+          collaboration and sharing through the Power BI Service and
+          ensures data security and governance, making it ideal for
+          driving data-driven decisions and strategic insights.
+        </p>
+
+        <p class="title">Soft Skills</p>
+        <p>Boost your communication abilities with our soft skills sessions,
+          seamlessly integrated into our classes to ensure that you're
+          fully prepared for the workplace and comprehensive career
+          readiness.
+        </p>
+        <p class="title">Interview Preparation</p>
+        <p>This module will enhance your Interview skills, Resume, LinkedIn
+          profile and Naukri profile.
+        </p>
+
+      </div>
+      <div id="tab3" class="tab-content">
+        <div class="logo">
+
+          <div class="image-box" style="border-color: #FFD43B;">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+              style="width: 80px;">
+          </div>
+
+          <div class="image-box" style="border-color: #E48E00;">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"  style="width: 80px;"/>
+
+          </div>
+
+
+          <div class="image-box" style="border-color: #4DABCF;">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg"  style="width: 80px;"/>
+
+          </div>
+
+          <div class="image-box" style="border-color: #fd7ac7;">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg"  style="width: 80px;"/>
+
+          </div>
+
+          <div class="image-box" style="border-color: #FFC900;">
+            <img src="assests/Course-logo/power bi.png"
+              style="width: 110px;">
+          </div>
+
+          <div class="image-box" style="border-color: #000000;">
+            <img src="assests/Course-logo/ChatGPT-Logo.png"
+              style="width: 90px;">
+          </div>
+          <div class="image-box" style="border-color: #424677;">
+            <img src="assests/Course-logo/seaborn.png"
+              style="width: 80px;">
+          </div>
+          <div class="image-box" style="border-color: #FFAA70;">
+            <img src="assests/Course-logo/matplotlib-1.svg"
+              style="width: 80px;">
+          </div>
+          <div class="image-box" style="border-color: #50af7d;">
+            <img src="assests/Course-logo/excel.png"
+              style="width: 80px;">
+          </div>
+
+    
+        </div>
+      </div>
+    </div>
+    <div class="sec2">
+      <div class="course-info">
+        <h2>Course Information</h2>
+        <div class="info">
+          <div class="Information">
+            <i class="fa-solid fa-calendar-days"></i>
+            <div class="content">
+              <h5>Class Schedule:</h5>
+              <p>6 Hours Per Week</p>
+            </div>
+          </div>
+
+          <div class="Information">
+            <i class="fa-regular fa-clock"></i>
+            <div class="content">
+              <h5>Duration:</h5>
+              <p>4 - 6 Months</p>
+            </div>
+          </div>
+
+          <div class="Information">
+            <i class="fa-solid fa-layer-group"></i>
+            <div class="content">
+              <h5>Course Level:</h5>
+              <p>Beginners To Advanced</p>
+            </div>
+          </div>
+
+          <div class="Information">
+            <i class="fa-solid fa-street-view"></i>
+            <div class="content">
+              <h5>Support Assistance:</h5>
+              <p>100%</p>
+            </div>
+          </div>
+
+          <div class="Information">
+            <i class="fas fa-sync-alt"></i>
+            <div class="content">
+            <h5>Mode</h5>
+            <p>Online</p>
+            </div>
+        </div>
+        </div>
+        <!-- <h3><i class="fa-solid fa-indian-rupee-sign"></i> 40,000 <sub><i class="fa-solid fa-indian-rupee-sign"></i> 70,000</sub></h3> -->
+        <button onclick="openEnrollModal()">ENROLL NOW</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container3">
+    <div class="content">
+      <h2><span>MumbaiCodingClub</span><br> Provides Course <br>Completion Certificate</h2>
+      <!-- <button>Download<i class="fa-solid fa-arrow-right"></i></button> -->
+    </div>
+    <img src="assests/Certificate.jpg" alt="">
+  </div>
+ 
+  <footer id="footer" class="footer light-background">
+    <div class="glassy-background">
+      <div class="container footer-top ">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a href="index.html" class="d-flex align-items-center">
+              <img src="assests/logos/MCC White Logo.svg" style="width: 40%;">
+            </a>
+            <div class="footer-contact pt-3">
+              <p>Opp Radiance Academy,</p>
+              <p>Tilak Nagar 90 feet Road, </p>
+              <p> Near Sakinaka Metro Station Mumbai-400072.</p>
+              <p class="mt-3"><strong>Phone:</strong> <span><a href="tel:9702328507 ">+91 9702328507</a></span></p>
+              <p><strong>Email:</strong> <span><a
+                    href="mailto: info@mumbaicodingclub.com">info@mumbaicodingclub.com</a></span></p>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#about-section">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#services">Services</a></li>
+              <!-- <li><i class="bi bi-chevron-right"></i> <a href="#features">Technologies</a></li> -->
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-3 footer-links">
+            <h4>Our Courses</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="fullstack.html">Full-stack Development</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="pythonstack.html">Core Python with OOPs</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="data-analyst.html">Data Analytics</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-12 follow-us">
+            <h4>Follow Us</h4>
+            <p>Get in touch with us for inquiries, support, or collaboration.</p>
+            <div class="social-links d-flex">
+              <a href="https://wa.me/9702328507" target="_blank"><i class="fab fa-whatsapp"></i>
+              </a>
+              <a href="https://www.facebook.com/people/Mumbai-Coding-Club/100083680141795/" target="_blank"><i
+                  class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/mumbaicodingclub/?igshid=ZDdkNTZiNTM%3D" target="_blank"><i
+                  class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/company/84021254/admin/dashboard/" target="_blank"><i
+                  class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="container copyright text-center mt-4">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename"><a href="https://pyzon.in/" style="color: #fff; text-decoration: none;">Pyzon IT Solution</a></strong> <span>All Rights Reserved</span></p>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+<div class="modal" id="modal">
+  <div class="modal-position">
+  <div class="modal-content">
+    <div class="Contact" style="grid: none;">
+    <div class="sec1">
+      <span id="span">X</span>
+
+      <p id="subtitle">Get 1:1 Counselling</p>
+      <h2>From Our Industry Experts</h2>
+      <form action="">
+        <input type="text" name="fullname" id="name" class="input" placeholder="Enter Name" required>
+        <input type="email" name="email" id="email" class="input" placeholder="Enter Email" required>
+        <input type="phone" name="phone" id="phone" class="input" placeholder="Enter Phone Number" required>
+
+        <div class="custom-dropdown">
+        <select id="year" name="year" required>
+          <option value="" disabled selected>Graduation Year</option>
+        </select>
+        </div>
+        <div class="experience">
+          <label id="experience">Experience</label>
+
+          <div class="radio-sec">
+            <input type="radio" name="experience" id="tech_role" value="Working Professional - Technical Roles">
+            <label for="tech_role">Working Professional - Technical Roles</label>
+          </div>
+
+          <div class="radio-sec">
+            <input type="radio" name="experience" id="non_tech_role" value="Working Professional - Non Technical">
+            <label for="non_tech_role">Working Professional - Non Technical</label>
+          </div>
+
+          <div class="radio-sec">
+            <input type="radio" name="experience" id="final_year" value="College Student - Final Year">
+            <label for="final_year">College Student - Final Year</label>
+          </div>
+
+          <div class="radio-sec">
+            <input type="radio" name="experience" id="pre_final_year" value="College Student - 1st to Pre-final Year">
+            <label for="pre_final_year">College Student - 1st to Pre-final Year</label>
+          </div>
+
+          <div class="radio-sec">
+            <input type="radio" name="experience" id="other" value="Other">
+            <label for="other">Other</label>
+          </div>
+        </div>
+
+
+        <button>Book 1:1 Counselling</button>
+
+      </form>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+
+  <script>
+    document.querySelectorAll('.course-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.course-tab').forEach(item => item.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(item => item.classList.remove('active'));
+
+        tab.classList.add('active');
+        document.getElementById(tab.getAttribute('data-tab')).classList.add('active');
+      });
+    });
+  </script>
+
+  <script>
+    var modal = document.getElementById('modal');
+    var span = document.getElementById('span');
+    function openEnrollModal() {
+      modal.style.display = 'block';
+      document.body.style.overflow = 'auto'; // Enable background scroll
+
+    }
+    span.onclick = function () {
+      modal.style.display = 'none';
+      document.body.style.overflow = 'auto'; // Enable background scroll
+    }
+    window.addEventListener('click', function (event) {
+      if (event.target == modal) {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto'; // Enable background scroll
+      }
+    });
+  </script>
+
+  <script>
+    const startYear = 2000;
+    const endYear = 2030;
+    const yearDropdown = document.getElementById('year');
+
+    for (let year = startYear; year <= endYear; year++) {
+      const option = document.createElement('option');
+      option.value = year;
+      option.text = year;
+      yearDropdown.appendChild(option);
+    }
+  </script>
+
+  <script src="mcc.js"></script>
+</body>
+
+</html>

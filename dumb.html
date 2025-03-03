@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Cards</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            min-height: 100px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .card.expanded {
+            grid-column: span 2;
+            transform: scale(1.02);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+            z-index: 2;
+        }
+
+        .card-content {
+            height: 60px;
+            overflow: hidden;
+            transition: height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card.expanded .card-content {
+            height: 200px;
+        }
+
+        .card h2 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            position: relative;
+        }
+
+        .card h2::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: #007bff;
+            transition: width 0.3s ease;
+        }
+
+        .card.expanded h2::after {
+            width: 100px;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.6;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .card.expanded {
+                grid-column: span 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h2>Card 1</h2>
+            <div class="card-content">
+                <p>This is a beautiful animated card that expands when clicked. The animation is smooth and satisfying. Click to see the full content of this card!</p>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Card 2</h2>
+            <div class="card-content">
+                <p>Another amazing card with smooth transitions and hover effects. The design is clean and modern, perfect for showcasing content.</p>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Card 3</h2>
+            <div class="card-content">
+                <p>Cards use CSS transitions for smooth animations. They expand gracefully when clicked and shrink back when clicked again.</p>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Card 4</h2>
+            <div class="card-content">
+                <p>The grid layout adjusts automatically to different screen sizes, making it fully responsive and mobile-friendly.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const cards = document.querySelectorAll('.card');
+        
+        cards.forEach(card => {
+            card.addEventListener('click', () => {
+                // If card is already expanded, just shrink it
+                if (card.classList.contains('expanded')) {
+                    card.classList.remove('expanded');
+                    return;
+                }
+
+                // Shrink all cards
+                cards.forEach(c => c.classList.remove('expanded'));
+                
+                // Expand clicked card
+                card.classList.add('expanded');
+
+                // Smooth scroll to the card if it's not fully visible
+                card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            });
+        });
+    </script>
+</body>
+</html>

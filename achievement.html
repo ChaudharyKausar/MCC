@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Achievement</title>
+        <link rel="stylesheet" href="achievement.css">
+          <link rel="stylesheet" href="global.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-grid.min.css"
+    integrity="sha512-i1b/nzkVo97VN5WbEtaPebBG8REvjWeqNclJ6AItj7msdVcaveKrlIIByDpvjk5nwHjXkIqGZscVxOrTb9tsMA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    </head>
+<body>
+     <header>
+    <div class="container">
+      <input type="checkbox" name="check" id="check">
+      <div class="logo-container">
+        <!-- <h3 class="logo">Brand<span>Name</span></h3> -->
+        <a href="index.html"><img src="assests/logos/MCC White Logo.svg" alt=""></a>
+      </div>
+
+      <div class="nav-btn">
+        <div class="nav-links">
+          <ul>
+            <li class="nav-link" style="--i: .6s">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="nav-link" style="--i: 1.35s">
+              <a href="index.html#about-section">About</a>
+            </li>
+            <!-- <li class="nav-link" style="--i: .85s">
+              <a href="#">Menu<i class="fas fa-caret-down"></i></a>
+              <div class="dropdown">
+                <ul>
+                  <li class="dropdown-link">
+                    <a href="#">Link 1</a>
+                  </li>
+                  <li class="dropdown-link">
+                    <a href="#">Link 2</a>
+                  </li>
+                  <li class="dropdown-link">
+                    <a href="#">Link 3<i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown second">
+                      <ul>
+                        <li class="dropdown-link">
+                          <a href="#">Link 1</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="#">Link 2</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="#">Link 3</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="#">More<i class="fas fa-caret-down"></i></a>
+                          <div class="dropdown second">
+                            <ul>
+                              <li class="dropdown-link">
+                                <a href="#">Link 1</a>
+                              </li>
+                              <li class="dropdown-link">
+                                <a href="#">Link 2</a>
+                              </li>
+                              <li class="dropdown-link">
+                                <a href="#">Link 3</a>
+                              </li>
+                              <div class="arrow"></div>
+                            </ul>
+                          </div>
+                        </li>
+                        <div class="arrow"></div>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dropdown-link">
+                    <a href="#">Link 4</a>
+                  </li>
+                  <div class="arrow"></div>
+                </ul>
+              </div>
+            </li> -->
+            <li class="nav-link" style="--i: 1.1s">
+              <a href="#">Services<i class="fas fa-caret-down"></i></a>
+              <div class="dropdown">
+                <ul>
+                  <li class="dropdown-link">
+                    <a href="fullstack.html">Full-Stack</a>
+                  </li>
+                  <li class="dropdown-link">
+                    <a href="pythonstack.html">Core Python with OOPs</a>
+                  </li>
+                  <!-- <li class="dropdown-link">
+                    <a href="#">Link 3<i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown second">
+                      <ul>
+                        <li class="dropdown-link">
+                          <a href="#">Link 1</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="#">Link 2</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="#">Link 3</a>
+                        </li>
+                        <li class="dropdown-link">
+                          <a href="#">More<i class="fas fa-caret-down"></i></a>
+                          <div class="dropdown second">
+                            <ul>
+                              <li class="dropdown-link">
+                                <a href="#">Link 1</a>
+                              </li>
+                              <li class="dropdown-link">
+                                <a href="#">Link 2</a>
+                              </li>
+                              <li class="dropdown-link">
+                                <a href="#">Link 3</a>
+                              </li>
+                              <div class="arrow"></div>
+                            </ul>
+                          </div>
+                        </li>
+                        <div class="arrow"></div>
+                      </ul>
+                    </div>
+                  </li> -->
+                  <li class="dropdown-link">
+                    <a href="data-analyst.html">Data Analytics</a>
+                  </li>
+                  <div class="arrow"></div>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-link" style="--i: 1.35s">
+              <a href="index.html#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="log-sign" style="--i: 1.8s">
+          <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1v3f-pTYox6378tLCAlg9z3yvM1q-hGJ9e0YvzvSt8SYXMEyIIQ763YqEU5kVlEZBFcH-5Za_e?gv=true"
+            class="btn transparent" target="_blank">Book an appointment</a>
+        </div>
+      </div>
+
+      <div class="hamburger-menu-container">
+        <div class="hamburger-menu">
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </header>
+    
+        <div class="container1">
+            <img src="assests/Achievement- Hero Pajes Imaje.png" alt="">
+            <div class="text-content">
+                <h1>From Classroom to High Salaries</h1>
+                <p>Meet Our Alumni Who Have Achieved Great Heights in Their Careers
+                </p>
+            </div>
+            <div class="logos">
+                <div class="logos-slide">
+
+                    <div class="card1">
+                        <div class="image">
+                        <img src="assests/Khalid2.jpg" alt="">
+                    </div>
+                        <div class="content">
+                            <p class="name">Saquib Shaikh</p>
+                            <p class="designation">Software Engineer</p>
+                            <p class="field">BSC Mathematics</p>
+                            <div class="row">
+                            <p class="lpa">6.5 LPA</p>
+                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="card1">
+                        <div class="image">
+                        <img src="assests/Junaid.png" alt="">
+                        </div>
+                        <div class="content">
+                            <p class="name">Saquib Shaikh</p>
+                            <p class="designation">Software Engineer</p>
+                            <p class="field">BSC Mathematics</p>
+                            <div class="row">
+                            <p class="lpa">6.5 LPA</p>
+                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card1">
+                        <div class="image">
+                        <img src="assests/Khalid2.jpg" alt="">
+                    </div>
+                        <div class="content">
+                            <p class="name">Saquib Shaikh</p>
+                            <p class="designation">Software Engineer</p>
+                            <p class="field">BSC Mathematics</p>
+                            <div class="row">
+                            <p class="lpa">6.5 LPA</p>
+                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="card1">
+                        <div class="image">
+                        <img src="assests/Junaid.png" alt="">
+                        </div>
+                        <div class="content">
+                            <p class="name">Saquib Shaikh</p>
+                            <p class="designation">Software Engineer</p>
+                            <p class="field">BSC Mathematics</p>
+                            <div class="row">
+                            <p class="lpa">6.5 LPA</p>
+                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card1">
+                        <div class="image">
+                        <img src="assests/Khalid2.jpg" alt="">
+                    </div>
+                        <div class="content">
+                            <p class="name">Saquib Shaikh</p>
+                            <p class="designation">Software Engineer</p>
+                            <p class="field">BSC Mathematics</p>
+                            <div class="row">
+                            <p class="lpa">6.5 LPA</p>
+                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card1">
+                        <div class="image">
+                        <img src="assests/Junaid.png" alt="">
+                        </div>
+                        <div class="content">
+                            <p class="name">Saquib Shaikh</p>
+                            <p class="designation">Software Engineer</p>
+                            <p class="field">BSC Mathematics</p>
+                            <div class="row">
+                            <p class="lpa">6.5 LPA</p>
+                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card1">
+                        <div class="image">
+                        <img src="assests/Khalid2.jpg" alt="">
+                    </div>
+                        <div class="content">
+                            <p class="name">Saquib Shaikh</p>
+                            <p class="designation">Software Engineer</p>
+                            <p class="field">BSC Mathematics</p>
+                            <div class="row">
+                            <p class="lpa">6.5 LPA</p>
+                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+
+    <div class="container2">
+        <div class="card">
+            <img src="assests/person.jpg" alt="">
+            <div class="content">
+                <p class="field">BSC Mathematics</p>
+                <h2>Saquib Shaikh</h2>
+                <p class="collegeName">M.H Saboo Siddik Polyt</p>
+                <p class="designation">Software Engineer</p>
+                <p class="lpa">6.5 LPA</p>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="assests/person.jpg" alt="">
+            <div class="content">
+                <p class="field">BSC Mathematics</p>
+                <h2>Saquib Shaikh</h2>
+                <p class="collegeName">M.H Saboo Siddik Polyt</p>
+                <p class="designation">Software Engineer</p>
+                <p class="lpa">6.5 LPA</p>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="assests/person.jpg" alt="">
+            <div class="content">
+                <p class="field">BSC Mathematics</p>
+                <h2>Saquib Shaikh</h2>
+                <p class="collegeName">M.H Saboo Siddik Polyt</p>
+                <p class="designation">Software Engineer</p>
+                <p class="lpa">6.5 LPA</p>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img src="assests/person.jpg" alt="">
+            <div class="content">
+                <p class="field">BSC Mathematics</p>
+                <h2>Saquib Shaikh</h2>
+                <p class="collegeName">M.H Saboo Siddik Polyt</p>
+                <p class="designation">Software Engineer</p>
+                <p class="lpa">6.5 LPA</p>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="assests/person.jpg" alt="">
+            <div class="content">
+                <p class="field">BSC Mathematics</p>
+                <h2>Saquib Shaikh</h2>
+                <p class="collegeName">M.H Saboo Siddik Polyt</p>
+                <p class="designation">Software Engineer</p>
+                <p class="lpa">6.5 LPA</p>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="assests/person.jpg" alt="">
+            <div class="content">
+                <p class="field">BSC Mathematics</p>
+                <h2>Saquib Shaikh</h2>
+                <p class="collegeName">M.H Saboo Siddik Polyt</p>
+                <p class="designation">Software Engineer</p>
+                <p class="lpa">6.5 LPA</p>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="assests/person.jpg" alt="">
+            <div class="content">
+                <p class="field">BSC Mathematics</p>
+                <h2>Saquib Shaikh</h2>
+                <p class="collegeName">M.H Saboo Siddik Polyt</p>
+                <p class="designation">Software Engineer</p>
+                <p class="lpa">6.5 LPA</p>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img src="assests/person.jpg" alt="">
+            <div class="content">
+                <p class="field">BSC Mathematics</p>
+                <h2>Saquib Shaikh</h2>
+                <p class="collegeName">M.H Saboo Siddik Polyt</p>
+                <p class="designation">Software Engineer</p>
+                <p class="lpa">6.5 LPA</p>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="assests/person.jpg" alt="">
+            <div class="content">
+                <p class="field">BSC Mathematics</p>
+                <h2>Saquib Shaikh</h2>
+                <p class="collegeName">M.H Saboo Siddik Polyt</p>
+                <p class="designation">Software Engineer</p>
+                <p class="lpa">6.5 LPA</p>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="assests/person.jpg" alt="">
+            <div class="content">
+                <p class="field">BSC Mathematics</p>
+                <h2>Saquib Shaikh</h2>
+                <p class="collegeName">M.H Saboo Siddik Polyt</p>
+                <p class="designation">Software Engineer</p>
+                <p class="lpa">6.5 LPA</p>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="assests/person.jpg" alt="">
+            <div class="content">
+                <p class="field">BSC Mathematics</p>
+                <h2>Saquib Shaikh</h2>
+                <p class="collegeName">M.H Saboo Siddik Polyt</p>
+                <p class="designation">Software Engineer</p>
+                <p class="lpa">6.5 LPA</p>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img src="assests/person.jpg" alt="">
+            <div class="content">
+                <p class="field">BSC Mathematics</p>
+                <h2>Saquib Shaikh</h2>
+                <p class="collegeName">M.H Saboo Siddik Polyt</p>
+                <p class="designation">Software Engineer</p>
+                <p class="lpa">6.5 LPA</p>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+
+            </div>
+        </div>
+        <div class="card">
+            <img src="assests/person.jpg" alt="">
+            <div class="content">
+                <p class="field">BSC Mathematics</p>
+                <h2>Saquib Shaikh</h2>
+                <p class="collegeName">M.H Saboo Siddik Polyt</p>
+                <p class="designation">Software Engineer</p>
+                <p class="lpa">6.5 LPA</p>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="assests/person.jpg" alt="">
+            <div class="content">
+                <p class="field">BSC Mathematics</p>
+                <h2>Saquib Shaikh</h2>
+                <p class="collegeName">M.H Saboo Siddik Polyt</p>
+                <p class="designation">Software Engineer</p>
+                <p class="lpa">6.5 LPA</p>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="assests/person.jpg" alt="">
+            <div class="content">
+                <p class="field">BSC Mathematics</p>
+                <h2>Saquib Shaikh</h2>
+                <p class="collegeName">M.H Saboo Siddik Polyt</p>
+                <p class="designation">Software Engineer</p>
+                <p class="lpa">6.5 LPA</p>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img src="assests/person.jpg" alt="">
+            <div class="content">
+                <p class="field">BSC Mathematics</p>
+                <h2>Saquib Shaikh</h2>
+                <p class="collegeName">M.H Saboo Siddik Polyt</p>
+                <p class="designation">Software Engineer</p>
+                <p class="lpa">6.5 LPA</p>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="container3">
+
+    <div class="student-card">
+        <img src="assests/person.jpg" alt="">
+        <div class="card">
+            <div class="content">
+                <p class="field">BSC Mathematics</p>
+                <h2>Saquib Shaikh</h2>
+                <p class="collegeName">M.H Saboo Siddik Polyt</p>
+                <p class="designation">Software Engineer</p>
+                <p class="lpa">6.5 LPA</p>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="student-card">
+        <img src="assests/person.jpg" alt="">
+        <div class="card">
+            <div class="content">
+                <p class="field">BSC Mathematics</p>
+                <h2>Saquib Shaikh</h2>
+                <p class="collegeName">M.H Saboo Siddik Polyt</p>
+                <p class="designation">Software Engineer</p>
+                <p class="lpa">6.5 LPA</p>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="student-card">
+        <img src="assests/person.jpg" alt="">
+        <div class="card">
+            <div class="content">
+                <p class="field">BSC Mathematics</p>
+                <h2>Saquib Shaikh</h2>
+                <p class="collegeName">M.H Saboo Siddik Polyt</p>
+                <p class="designation">Software Engineer</p>
+                <p class="lpa">6.5 LPA</p>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="student-card">
+        <img src="assests/person.jpg" alt="">
+        <div class="card">
+            <div class="content">
+                <p class="field">BSC Mathematics</p>
+                <h2>Saquib Shaikh</h2>
+                <p class="collegeName">M.H Saboo Siddik Polyt</p>
+                <p class="designation">Software Engineer</p>
+                <p class="lpa">6.5 LPA</p>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+
+            </div>
+        </div>
+    </div>
+
+</div> -->
+
+    <!-- <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script> -->
+    <!-- <div class="elfsight-app-3c349834-f273-45e9-9122-ebfb592c06ff" data-elfsight-app-lazy></div> -->
+    
+    <footer>
+        <div class="section1">
+        <div class="content">
+          <div class="sec">
+            <div class="sec-logo">
+            <img src="assests/logos/MCC logo.svg" alt="">
+            <div class="row2">
+              <a href="https://www.linkedin.com/company/mumbai-coding-club/" target="_blank" ><i class="fa-brands fa-linkedin-in" style="color: #0077b5;"></i></a>
+              <a href="https://www.instagram.com/mumbaicodingclub/?igshid=ZDdkNTZiNTM%3D" target="_blank"><i class="fa-brands fa-instagram" style=" color: #833ab4;
+                background: linear-gradient(
+                  to right,#833ab4,#fd1d1d,#fcb045); -webkit-text-fill-color: transparent; -webkit-background-clip: text;"></i></a>
+              <!-- <i class="fa-brands fa-x-twitter"></i> -->
+              <a href="https://www.facebook.com/people/Mumbai-Coding-Club/100083680141795/" target="_blank"><i class="fa-brands fa-facebook-f" style="color: #1877F2;"></i></a>
+              <a href="https://wa.me/919702328507"><i class="fa-brands fa-whatsapp" target="_blank" style="color: #25D366;"></i></a>
+            </div>
+          </div>
+            <div class="sec-content">
+              <p>Opening-Hour</p>
+              <div class="row"><i class="fa-regular fa-clock"></i><span>09:00am - 09:00pm </span>
+              </div>
+              <div class="row"><i class="fa-regular fa-calendar-days"></i><span>Monday - Friday</span>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+        <div class="google-review">
+        <p>Genuine Feedback from Our Students</p>
+        <button onclick="window.open('https://www.google.com/search?q=mumbai+coding+club&sca_esv=600dabd129a0d515&sca_upv=1&sxsrf=ADLYWIKOTk4zUKEjniFu98iIVRElJRYdlQ%3A1722334664958&ei=yL2oZp6cOtnh4-EPirfjyQs&gs_ssp=eJzj4tVP1zc0LExKriw3TEs2YLRSNagwTko1T7a0SLUwMjcwM0w2tzKoSEk0S0oxMTBKNTawNDMxTPISyi3NTUrMVEjOT8nMS1dIzilNAgAhCBY7&oq=mumbai+c&gs_lp=Egxnd3Mtd2l6LXNlcnAiCG11bWJhaSBjKgIIADITEC4YgAQYxwEYJxiKBRiOBRivATIREAAYgAQYkQIYsQMYgwEYigUyEBAAGIAEGLEDGIMBGBQYhwIyDhAuGIAEGMcBGI4FGK8BMhMQLhiABBhDGMcBGIoFGI4FGK8BMhQQLhiABBixAxjRAxiDARjHARiKBTIIEAAYgAQYsQMyDRAuGIAEGLEDGBQYhwIyBRAAGIAEMggQABiABBixAzIgEC4YgAQYxwEYigUYjgUYrwEYlwUY3AQY3gQY4ATYAQJItS1QrQtYsyBwAXgBkAEAmAGAAqABvwuqAQUwLjguMbgBA8gBAPgBAZgCCqACxAzCAgoQABiwAxjWBBhHwgINEAAYgAQYsAMYQxiKBcICExAuGIAEGLADGEMYyAMYigXYAQHCAhkQLhiABBiwAxhDGMcBGMgDGIoFGK8B2AEBwgIKECMYgAQYJxiKBcICChAAGIAEGEMYigXCAhAQABiABBixAxhDGIMBGIoFwgIOEAAYgAQYsQMYgwEYigXCAgsQABiABBixAxiDAcICChAuGIAEGEMYigXCAgQQIxgnwgIQEC4YgAQYsQMYQxiDARiKBcICCxAuGIAEGLEDGIMBwgINEAAYgAQYsQMYFBiHAsICEBAuGIAEGNEDGEMYxwEYigXCAhcQLhiABBiRAhixAxjRAxiDARjHARiKBcICDRAAGIAEGLEDGEMYigXCAhkQLhiABBixAxhDGIMBGMcBGIoFGI4FGK8BmAMAiAYBkAYRugYGCAEQARgIugYGCAIQARgUkgcFMS43LjKgB6y_AQ&sclient=gws-wiz-serp#lrd=0x3be7c98e827061c7:0xda6bd402e309641b,1,,,,')">Google Review</button>
+      </div>
+      </div>
+      
+        <div class="links">
+        <div class="col">
+          <p>Quick Links</p>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="achievement.html">Achievement</a></li>
+            <!-- <li><a href="contact.html">Courses</a></li> -->
+          </ul>
+        </div>
+      
+        <div class="col">
+          <p>Course</p>
+          <ul>
+            <li><a href="fullstack.html">Full-Stack Development</a></li>
+            <li><a href="pythonstack.html">Python Development</a></li>
+            <li><a href="data-analyst.html">Data Analyst</a></li>
+          </ul>
+        </div>
+      
+        <div class="col">
+          <p>Office Location</p>
+          <ul class="location">
+            <li><a href="tel:9702328507" target="_blank"><i class="fa-solid fa-phone"></i>9702328507</a></li>
+            <li><a href="mailto:mumbaicodingclub@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i>mumbaicodingclub@gmail.com</a></li>
+            <li><a href="https://maps.app.goo.gl/xoPeBewbUQ3Z5wXU6" target="_blank"><i class="fa-solid fa-location-dot"></i> 
+            <p>Opp Radiance Academy, Tilak Nagar 90 feet Road, Near Sakinaka Metro Station Mumbai-400072.</p></a></li>
+          </ul>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7540.350352211677!2d72.88528653657487!3d19.099969516685178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c87a7b146d75%3A0x76380d8179575d82!2sLokmanya%20Tilak%20Nagar%2C%20Saki%20Naka%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1721714563501!5m2!1sen!2sin" width="300" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </footer>
+</body>
+</html>
