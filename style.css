@@ -414,7 +414,7 @@ Home section
     max-width: 800px;
     margin-bottom: 0;
     display: flex;
-    padding: 2rem 1.4rem;
+    padding: 2.4rem 0 2rem;
   }
 
   .companies-hero-text-contain {
@@ -538,9 +538,22 @@ Home section
     gap: 18px;
     padding: 18px 16px;
   }
+  .about-heading{
+    font-size: 30px !important;
+    line-height: 34px !important;
+  }
+  .container-1280px.requirement-wrapper {
+    grid-row-gap: 30px;
+  }
+  .requirement-icon-wrapper {
+    width: 50px;
+    height: 50px;
+} 
+
+.requirement-icon-wrapper i{
+font-size: 30px !important;
 }
-
-
+}
 /* ----------------------------------------------
 Alumini section
 ----------------------------------------------- */
@@ -668,6 +681,12 @@ html.w-mod-touch * {
   position: relative;
 }
 
+@media screen and (max-width:500px) {
+  .alumini .container{
+    gap: 10px !important;
+    padding: 0;
+  }
+}
 
 /* ----------------------------------------------------
 Advantage section
@@ -796,7 +815,7 @@ Advantage section
 
 @media screen and (max-width:1070px) {
  .advantage{
-  padding: 4rem 3rem;
+  padding: 4rem 1.6rem;
  } 
 }
 
@@ -1063,7 +1082,8 @@ Section Exclusive
 @media (max-width: 700px) {
   .approach {
     grid-template-columns: 1fr;
-    padding: 2rem;
+    padding: 2rem 1.6rem;
+    gap: 1.4rem;
   }
 
 }
@@ -1233,7 +1253,11 @@ color-mix(in srgb, #05BB12, transparent 90%); */
   /* font-style: italic; */
   color: #060606;
 }
-
+@media screen and (max-width:600px) {
+  .services .service-container{
+    padding: 2rem 1.5rem;
+  }
+}
 
 /* -------------------------------------------------------------
 Logo Section
@@ -1532,7 +1556,17 @@ Mentor section
   opacity: 1 !important;
 }
 
-
+@media screen and (max-width:600px) {
+  .testimonials .testimonial-item .testimonial-content {
+    padding-left: 20px;
+  }
+  .testimonials .section-title {
+    margin: 2rem 0;
+}
+.img-fluid {
+  width: 8rem;
+  height: 8rem;
+}}
 /*--------------------------------------------------------------
 # FAQ Section
 --------------------------------------------------------------*/
@@ -1703,13 +1737,23 @@ Mentor section
     padding-right: 16px
   }
   .heading-56px.companies-hero-heading,.heading-56px.requirement-heading{
-    font-size: 34px;
+    font-size: 36px;
     line-height: 40px;
   }
   .container-1280px.faq{
     flex-direction: column;
     padding: 4rem 2rem;
   }
+  .faq-question{
+    padding: 8px;
+  }
+  .toggle-icon {
+    font-size: 30px;
+  }
+  .faq-item {
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
   .section-title h2{
     font-size: 28px;
     line-height: 30px;

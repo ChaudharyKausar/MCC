@@ -782,7 +782,7 @@ input[type="radio"]:checked+label::before {
     }
 
     .Contact {
-        padding: 2rem;
+        padding: 2rem 1.4rem;
     }
 
     .Contact .sec1 h2 {
@@ -910,8 +910,11 @@ footer .copyright p {
     text-align: center;
 }
 
-
-
+@media screen and (max-width:800px) {
+    footer{
+ padding: 4rem 0 0 !important;   
+}
+}
 
 
 
